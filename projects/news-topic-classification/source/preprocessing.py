@@ -43,7 +43,7 @@ def process_file(filepath, result_filepath):
         all_words = []
         for s in sentences:
             all_words += split_to_words(s)
-
+            all_words.append("\n")
         lemmatized = []
         stemmed = []
         original = []
@@ -55,7 +55,10 @@ def process_file(filepath, result_filepath):
 
     with open(result_filepath, "w") as f:
         for i in range(len(all_words)):
-            print(original[i], stemmed[i], lemmatized[i], sep="\t", file=f)
+            if original[i] == "\n":
+                print("", file=f)
+            else:
+                print(original[i], stemmed[i], lemmatized[i], sep="\t", file=f)
 
 
 def process_topic(dirname, result_dirname, topic):
