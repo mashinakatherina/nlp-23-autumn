@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 def split_to_words(sentence):
-    words = re.findall(r"(((?<=^)|(?<= )|(?<=\"))(\w+\-?)+\w*\.?)", sentence)
+    words = re.findall(r"(((?<=^)|(?<= )|(?<=\"))(\w+[-,.@]?)+\w*\.?)", sentence)
     words = list(map(lambda x: x[0], words))
     return words
 
@@ -54,7 +54,7 @@ def process_file(filepath, result_filepath):
             original.append(w_processed)
 
     with open(result_filepath, "w") as f:
-        for i in range(len(all_words)):
+        for i in range(len(original)):
             if original[i] == "\n":
                 print("", file=f)
             else:
