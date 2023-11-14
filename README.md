@@ -14,8 +14,8 @@
 - [N-grams](/tasks/task-02/README.md)
 - [Векторизация текста](/tasks/task-03/README.md)
 - [Классификация текстов](/tasks/task-04.1/README.md) или [Тематическое моделирование](/tasks/task-04.2/README.md)
-- [В разработке](/tasks/task-05/README.md)
-- [В разработке](/tasks/task-06/README.md)
+- [Поиск по векторной БД](/tasks/task-05/README.md)
+- [Question Answering](/tasks/task-06/README.md)
 
 
 ## Результаты выполнения лабораторных работ
