@@ -1,6 +1,7 @@
 import os
 import re
 from nltk import WordNetLemmatizer, SnowballStemmer
+from nltk.corpus import stopwords
 from pathlib import Path
 
 
@@ -73,3 +74,21 @@ def process_topic(dirname, result_dirname, topic):
         path = os.path.join(topic_dir, f)
         result_path = os.path.join(result_dir, f + ".tsv")
         process_file(path, result_path)
+
+
+def preprocess_text(text, by_sentences=False):
+    stemmer = SnowballStemmer("english")
+    lemmatizer = WordNetLemmatizer()
+    sentences = split_to_sentences(text)[1]
+    result = []
+    for s in sentences:
+        sentence = []
+        for w in split_to_words(s):
+            w_processed = re.sub(r"[.!?,]$", "", w).lower()
+            if lemmatizer.lemmatize(w_processed) not in stopwords.words("english"):
+                sentence.append(stemmer.stem(w_processed))
+        if by_sentences:
+            result.append(sentence)
+        else:
+            result += sentence
+    return result
