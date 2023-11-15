@@ -25,4 +25,5 @@
 | Project name | Student name |
 | --- | --- |
 | [emoji-labeller](/projects/emoji-labeller) | Иванов Иван Иванович |
+| [news-topic-classification](/projects/news-topic-classification) | Гораш Вячеслав Игоревич |
 
