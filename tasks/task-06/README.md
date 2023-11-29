@@ -27,6 +27,20 @@
 Пример реализации похожей задачи без оценки, но с [интерфейсом](https://huggingface.co/spaces/IlyaGusev/saiga_13b_llamacpp_retrieval_qa) можно посмотреть по данной ссылке
 [Code](https://huggingface.co/spaces/IlyaGusev/saiga_13b_llamacpp_retrieval_qa/blob/main/app.py) 
 
+Дополнительно можно добавить интерфейс на основе библиотеки [Gradio](https://www.gradio.app/guides/quickstart). [Простейший пример](https://www.gradio.app/docs/chatinterface) состоит из следующего кода:
+```python
+import gradio as gr
+
+def echo(message, history):
+    return message
+
+demo = gr.ChatInterface(fn=echo, examples=["hello", "hola", "merhaba"], title="Echo Bot")
+demo.launch()
+```
+
+И имеет следующую визуализацию:
+![gradio visualization](gradio_example.png)
+
 Общие рекомендации при использовании Google Colab:
 - подключаться к окружению с GPU (T4);
 - сохранять индекс на google disk, чтобы каждый раз его не пересоздавать;
