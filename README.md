@@ -27,4 +27,4 @@
 | [emoji-labeller](/projects/emoji-labeller) | Иванов Иван Иванович |
 | [news-topic-classification](/projects/news-topic-classification) | Гораш Вячеслав Игоревич |
 | [aj-news-clusterization](/projects/aj-news-clusterization) | Федотовских Евгений Александрович |
-
+| [ag-news-classification](/projects/ag-news-classification) | Веснин Дмитрий Владимирович |
