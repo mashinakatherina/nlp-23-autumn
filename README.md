@@ -28,3 +28,4 @@
 | [news-topic-classification](/projects/news-topic-classification) | Гораш Вячеслав Игоревич |
 | [aj-news-clusterization](/projects/aj-news-clusterization) | Федотовских Евгений Александрович |
 | [ag-news-classification](/projects/ag-news-classification) | Веснин Дмитрий Владимирович |
+| [twitter-bullying-classification](/projects/twitter-bullying-classification) | Шерман Марк Леонидович |
