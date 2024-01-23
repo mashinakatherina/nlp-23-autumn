@@ -29,3 +29,4 @@
 | [aj-news-clusterization](/projects/aj-news-clusterization) | Федотовских Евгений Александрович |
 | [ag-news-classification](/projects/ag-news-classification) | Веснин Дмитрий Владимирович |
 | [twitter-bullying-classification](/projects/twitter-bullying-classification) | Шерман Марк Леонидович |
+| [news-articles-clusterization](/projects/news-articles-clusterization) | Машина Екатерина Алексеевна |
